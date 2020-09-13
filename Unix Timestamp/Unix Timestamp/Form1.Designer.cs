@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Unix_Timestamp));
             this.time = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
@@ -69,6 +70,7 @@
             this.Controls.Add(this.gunaPanel1);
             this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.time);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Unix_Timestamp";
             this.Text = "Unix Timestamp";
             this.Load += new System.EventHandler(this.Form1_Load);
