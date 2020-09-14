@@ -19,8 +19,8 @@ namespace Unix_Timestamp
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            time.Text = ((int)(DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))).TotalSeconds).ToString();
-
+            unix.Text = ((int)(DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))).TotalSeconds).ToString();
+            time.Text = DateTime.Now.ToString();
         }
     }
 }
